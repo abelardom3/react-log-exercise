@@ -1,0 +1,37 @@
+
+Hooks are functions provided by react to use those in your components
+
+
+
+useState
+- A hook that adds state to function components
+- The argument to useState(0) is the initial state
+-
+
+
+useEffect
+- Like side effects, renders everytime you re-render in your application
+- Can be used to fetch api and change the dom
+- Clean up 
+- 2nd parameter will take a dependecy array 
+- Empty array will render once after rendering to page
+- To re-run useEffect on a update of the state we pass in the state
+- Can also have a cleanup being returned to reduce memeory leaks
+
+
+ useEffect(()=>{
+// code for effects
+return ()=>{
+    // cleanup 
+}
+
+},[count])
+
+
+
+useContext 
+- Be able to share state between deeply nested components
+-
+-
+-
+
