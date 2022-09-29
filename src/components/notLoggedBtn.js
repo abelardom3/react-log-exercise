@@ -1,9 +1,9 @@
 import React from "react";
 
 
-const NotLoggedBtn = (props) => {
+const NotLoggedBtn = ({ handleChange }) => {
 
-    return <button onClick={props.handleChange} className='btn'>Log in</button>
+    return <button onClick={handleChange} className='btn'>Log in</button>
 }
 
 

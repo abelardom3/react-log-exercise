@@ -19,6 +19,7 @@ useEffect
 - Can also have a cleanup being returned to reduce memeory leaks
 
 
+
  useEffect(()=>{
 // code for effects
 return ()=>{
